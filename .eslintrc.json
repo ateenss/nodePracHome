@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": [2, "never"],  // 结尾不能有分号
+        "eqeqeq": "warn",  // 要求使用 === 和 !==
+        "no-irregular-whitespace": "warn",  // 禁止不规则的空白
+        "no-empty-pattern": "warn",  // 禁止使用空解构模式
+        "no-redeclare": "warn", // 禁止多次声明同一变量
+        "quotes": ["error", "single"],  // 代码中使用单引号包裹字符串
+        "indent": ["warn", 2],  // 代码缩进为2个空格
+        "no-class-assign": "error",  // 禁止修改类声明的变量
+        "no-const-assign": "error", // 禁止修改 const 声明的变量
+        "camelcase": "error",//强制驼峰法命名
+        "accessor-pairs": "warn", //在对象中使用getter/setter
+        "curly": [2, "all"],//必须使用 if(){} 中的{}
+        "default-case": "error",//switch语句最后必须有default
+        "no-var":"error"//要求使用 let 或 const 而不是 var
+    }
+}
